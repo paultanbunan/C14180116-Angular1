@@ -23,8 +23,6 @@ export class AppComponent {
   ];
   x;
   y;
-  a = "player 1 menang!";
-  b = "player 2 menang!";
   click() {
     if (this.turn == 1) {
       if (this.board[this.x - 1][this.y - 1] == 0) {
