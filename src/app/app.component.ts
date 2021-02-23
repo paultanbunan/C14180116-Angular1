@@ -7,8 +7,9 @@ import { Component, VERSION } from "@angular/core";
 })
 export class AppComponent {
   hasil;
-  giliran = true;
+  turn = 1;
   board: number[][] = [
+    [0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0],
@@ -17,10 +18,10 @@ export class AppComponent {
   x;
   y;
   click() {
-    if (this.giliran) {
+    if (this.turn == 1) {
       if (this.board[this.x - 1][this.y - 1] == 0) {
         this.board[this.x - 1][this.y - 1] = 1;
-        this.giliran = false;
+        this.turn = 2;
         this.hasil = this.board;
         console.log(this.hasil);
       } else {
@@ -29,7 +30,7 @@ export class AppComponent {
     } else {
       if (this.board[this.x - 1][this.y - 1] == 0) {
         this.board[this.x - 1][this.y - 1] = 2;
-        this.giliran = true;
+        this.turn = 1;
         this.hasil = this.board;
         console.log(this.hasil);
       } else {
