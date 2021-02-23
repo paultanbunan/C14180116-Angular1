@@ -31,7 +31,6 @@ export class AppComponent {
         this.board[this.x - 1][this.y - 1] = 1;
         for (var i = 0; i < 5; i++) {
           //colom
-          console.log(i);
           if (this.board[this.x - 1][i] != 1) {
             break;
           }
@@ -42,7 +41,6 @@ export class AppComponent {
         }
         for (var i = 0; i < 5; i++) {
           //row
-          console.log(i);
           if (this.board[i][this.y - 1] != 1) {
             break;
           }
@@ -60,7 +58,6 @@ export class AppComponent {
         this.board[this.x - 1][this.y - 1] = 2;
         for (var i = 0; i < 5; i++) {
           //colom
-          console.log(i);
           if (this.board[this.x - 1][i] != 2) {
             break;
           }
@@ -71,7 +68,6 @@ export class AppComponent {
         }
         for (var i = 0; i < 5; i++) {
           //row
-          console.log(i);
           if (this.board[i][this.y - 1] != 2) {
             break;
           }
