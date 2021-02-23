@@ -24,7 +24,7 @@ export class AppComponent {
         this.hasil = this.board;
         console.log(this.hasil);
       } else {
-        alert(this.hasil);
+        alert("Sudah Diinput Player 2");
       }
     } else {
       if (this.board[this.x - 1][this.y - 1] == 0) {
@@ -33,7 +33,7 @@ export class AppComponent {
         this.hasil = this.board;
         console.log(this.hasil);
       } else {
-        alert(this.hasil);
+        alert("Sudah Diinput Player 1");
       }
     }
   }
